@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Web Development Portfolio — Shri Nidhi | Senior Web Developer</title>
+<meta name="description" content="23+ live websites built by Shri Nidhi — Bangalore-based Senior Web Developer. Business, healthcare, education and e-commerce projects, plus custom plugins, dashboards and forms." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Bebas+Neue&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar" id="navbar">
+  <nav>
+    <a href="index.html" class="brand">
+      <span class="brand-mark">SN</span>
+      <span class="brand-name">Shri Nidhi</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="development.html" class="nav-link is-active">Dev Work</a>
+      <a href="collab.html" class="nav-link">Collab</a>
+      <a href="index.html#reels" class="nav-link">Reels</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <div class="nav-cta">
+      <a href="contact.html" class="gold-btn solid" style="padding:0.65rem 1.5rem; font-size:0.875rem;">
+        <span class="bg-fill"></span>
+        <span class="btn-label">Hire Me</span>
+      </a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <i data-lucide="menu" id="navToggleIcon"></i>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="portfolio.html" class="mobile-link">Portfolio</a>
+      <a href="development.html" class="mobile-link">Dev Work</a>
+      <a href="collab.html" class="mobile-link">Collab</a>
+      <a href="index.html#reels" class="mobile-link">Reels</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ===================== DEV HERO ===================== -->
+<section class="dev-hero">
+  <div class="ambient-backdrop soft">
+    <div class="ambient-blob a1 animate-drift-slow"></div>
+    <div class="ambient-blob a2 animate-drift-slower"></div>
+    <div class="ambient-blob a3 animate-breathe"></div>
+    <div class="ambient-vignette"></div>
+  </div>
+
+  <div class="dev-hero-inner">
+    <div class="reveal">
+      <p class="eyebrow" style="justify-content:center;"><span class="rule"></span>Senior Web Developer<span class="rule"></span></p>
+      <h1>Code That Carries <span class="gold-text">Real Brands</span></h1>
+      <p class="dev-hero-copy">
+        Alongside modeling and content work, I design and build production websites end
+        to end — from business sites and hospital platforms to custom plugins, dashboards
+        and forms. Every project below is live, shipped and running for a real client.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="stats">
+  <div class="stats-bg"></div>
+  <div class="stats-blob animate-drift-slower"></div>
+  <div class="stats-grid">
+    <div class="stat-card reveal" style="transition-delay:0s;">
+      <span class="stat-value gold-text" data-to="50" data-suffix="+">0+</span>
+      <p class="stat-label">Projects Delivered</p>
+    </div>
+    <div class="stat-card reveal" style="transition-delay:0.1s;">
+      <span class="stat-value gold-text" data-to="10" data-suffix="+">0+</span>
+      <p class="stat-label">Industries Served</p>
+    </div>
+    <div class="stat-card reveal" style="transition-delay:0.2s;">
+      <span class="stat-value gold-text" data-to="15" data-suffix="">0</span>
+      <p class="stat-label">Custom Builds</p>
+    </div>
+    <div class="stat-card reveal" style="transition-delay:0.3s;">
+      <span class="stat-value gold-text" data-to="3" data-suffix=" yrs">0 yrs</span>
+      <p class="stat-label">Dev Experience</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DEV WORK GRID ===================== -->
+<section class="dev-work">
+  <div class="gallery-blob animate-drift-slow"></div>
+
+  <div class="dev-inner">
+    <div class="reveal text-center">
+      <p class="eyebrow"><span class="rule"></span>Selected Work<span class="rule"></span></p>
+      <h2 class="section-title">Web Development <span class="gold-text">Portfolio</span></h2>
+    </div>
+
+    <div class="dev-filter-bar reveal" style="transition-delay:0.1s; margin-top:2.5rem;" id="devFilterBar">
+      <button class="filter-btn active" data-filter="All"><span class="pill"></span><span class="label">All</span></button>
+      <button class="filter-btn" data-filter="Business"><span class="pill"></span><span class="label">Business</span></button>
+      <button class="filter-btn" data-filter="Healthcare"><span class="pill"></span><span class="label">Healthcare</span></button>
+      <button class="filter-btn" data-filter="Education"><span class="pill"></span><span class="label">Education</span></button>
+      <button class="filter-btn" data-filter="E-commerce"><span class="pill"></span><span class="label">E-commerce</span></button>
+    </div>
+
+    <div class="project-grid" id="devGrid">
+      <a href="https://voilaingenious.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fvoilaingenious.com%2F?w=900&h=560" alt="Screenshot of Voila Ingenious website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">voilaingenious.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Voila Ingenious</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://voilainteriors.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0.08s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fvoilainteriors.com%2F?w=900&h=560" alt="Screenshot of Voila Interiors website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">voilainteriors.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Voila Interiors</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://www.malgudiholidays.co/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0.16s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fwww.malgudiholidays.co%2F?w=900&h=560" alt="Screenshot of Malgudi Holidays website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">malgudiholidays.co</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Malgudi Holidays</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://richardsonhospital.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Healthcare" style="transition-delay:0.24s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Frichardsonhospital.com%2F?w=900&h=560" alt="Screenshot of Richardson Hospital website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="heart-pulse"></i></span>
+          <p class="project-domain">richardsonhospital.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Richardson Hospital</h3>
+          <div class="project-tags"><span class="project-tag">Healthcare</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://master-msp.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0.32s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fmaster-msp.com%2F?w=900&h=560" alt="Screenshot of Master MSP website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">master-msp.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Master MSP</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://bhavanihospital.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Healthcare" style="transition-delay:0.4s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fbhavanihospital.com%2F?w=900&h=560" alt="Screenshot of Bhavani Hospital website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="heart-pulse"></i></span>
+          <p class="project-domain">bhavanihospital.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Bhavani Hospital</h3>
+          <div class="project-tags"><span class="project-tag">Healthcare</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://quicflow.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fquicflow.com%2F?w=900&h=560" alt="Screenshot of QuicFlow website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">quicflow.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">QuicFlow</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://ourikigai.org/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0.08s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fourikigai.org%2F?w=900&h=560" alt="Screenshot of Our Ikigai website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">ourikigai.org</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Our Ikigai</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://aditihearingsolutions.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Healthcare" style="transition-delay:0.16s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Faditihearingsolutions.com%2F?w=900&h=560" alt="Screenshot of Aditi Hearing Solutions website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="heart-pulse"></i></span>
+          <p class="project-domain">aditihearingsolutions.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Aditi Hearing Solutions</h3>
+          <div class="project-tags"><span class="project-tag">Healthcare</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://rawcreations.in/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0.24s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Frawcreations.in%2F?w=900&h=560" alt="Screenshot of Raw Creations website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">rawcreations.in</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Raw Creations</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://rawacademy.in/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Education" style="transition-delay:0.32s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Frawacademy.in%2F?w=900&h=560" alt="Screenshot of Raw Academy website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="graduation-cap"></i></span>
+          <p class="project-domain">rawacademy.in</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Raw Academy</h3>
+          <div class="project-tags"><span class="project-tag">Education</span><span class="project-tag custom">Custom Plugin</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://wincedu.uk/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Education" style="transition-delay:0.4s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fwincedu.uk%2F?w=900&h=560" alt="Screenshot of Wince Edu website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="graduation-cap"></i></span>
+          <p class="project-domain">wincedu.uk</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Wince Edu</h3>
+          <div class="project-tags"><span class="project-tag">Education</span><span class="project-tag custom">UK Client</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://www.theworldecademy.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Education" style="transition-delay:0s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fwww.theworldecademy.com%2F?w=900&h=560" alt="Screenshot of The World Ecademy website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="graduation-cap"></i></span>
+          <p class="project-domain">theworldecademy.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">The World Ecademy</h3>
+          <div class="project-tags"><span class="project-tag">Education</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://smwbosch.in/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0.08s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fsmwbosch.in%2F?w=900&h=560" alt="Screenshot of SMW Bosch website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">smwbosch.in</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">SMW Bosch</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://vishalhomesolutions.in/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0.16s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fvishalhomesolutions.in%2F?w=900&h=560" alt="Screenshot of Vishal Home Solutions website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">vishalhomesolutions.in</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Vishal Home Solutions</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://inn-creation.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0.24s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Finn-creation.com%2F?w=900&h=560" alt="Screenshot of Inn Creation website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">inn-creation.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Inn Creation</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://shreekavachaadvertising.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0.32s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fshreekavachaadvertising.com%2F?w=900&h=560" alt="Screenshot of Shree Kavacha Advertising website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">shreekavachaadvertising.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Shree Kavacha Advertising</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://s3powerplus.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0.4s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fs3powerplus.com%2F?w=900&h=560" alt="Screenshot of S3 Power Plus website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">s3powerplus.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">S3 Power Plus</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://chefworks.co.in/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fchefworks.co.in%2F?w=900&h=560" alt="Screenshot of Chef Works website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">chefworks.co.in</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Chef Works</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://ebykeshop.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="E-commerce" style="transition-delay:0.08s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Febykeshop.com%2F?w=900&h=560" alt="Screenshot of eByke Shop website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="shopping-cart"></i></span>
+          <p class="project-domain">ebykeshop.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">eByke Shop</h3>
+          <div class="project-tags"><span class="project-tag">E-commerce</span><span class="project-tag custom">Custom Dashboard</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://sarangiconstructions.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0.16s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fsarangiconstructions.com%2F?w=900&h=560" alt="Screenshot of Sarangi Constructions website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">sarangiconstructions.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Sarangi Constructions</h3>
+          <div class="project-tags"><span class="project-tag">Business</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://aadyacollegebangalore.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Education" style="transition-delay:0.24s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Faadyacollegebangalore.com%2F?w=900&h=560" alt="Screenshot of Aadya College Bangalore website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="graduation-cap"></i></span>
+          <p class="project-domain">aadyacollegebangalore.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Aadya College Bangalore</h3>
+          <div class="project-tags"><span class="project-tag">Education</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+      <a href="https://ascesabiz.com/" target="_blank" rel="noreferrer" class="project-card reveal is-visible" data-category="Business" style="transition-delay:0.32s;">
+        <div class="project-banner">
+          <img src="https://s0.wp.com/mshots/v1/https%3A%2F%2Fascesabiz.com%2F?w=900&h=560" alt="Screenshot of Ascesa Biz website" loading="lazy" />
+          <div class="project-banner-shade"></div>
+          <span class="project-cat-badge"><i data-lucide="building-2"></i></span>
+          <p class="project-domain">ascesabiz.com</p>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Ascesa Biz</h3>
+          <div class="project-tags"><span class="project-tag">Business</span><span class="project-tag custom">Custom Form</span></div>
+        </div>
+        <div class="project-visit">Visit Live Site <i data-lucide="arrow-up-right" style="width:16px;height:16px;"></i></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RESUME ===================== -->
+<section class="resume">
+  <div class="stats-bg"></div>
+  <div class="stats-blob animate-drift-slow"></div>
+  <div class="resume-inner reveal">
+    <p class="eyebrow" style="justify-content:center;">Hiring?</p>
+    <h2>Download My <span class="gold-text">Resume</span></h2>
+    <p class="resume-copy">
+      A quick overview of my experience across web development, modeling and content
+      creation — ready to share with your team or attach to an email.
+    </p>
+    <div class="resume-ctas">
+      <a href="assets/shri-nidhi-resume.pdf" download class="gold-btn solid">
+        <span class="bg-fill"></span>
+        <span class="btn-label">Download Resume</span>
+      </a>
+      <a href="assets/shri-nidhi-resume.pdf" target="_blank" rel="noreferrer" class="gold-btn outline">
+        <span class="bg-fill"></span>
+        <span class="btn-label">View Online</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="contact">
+  <div class="ambient-backdrop bold">
+    <div class="ambient-blob a1 animate-drift-slow"></div>
+    <div class="ambient-blob a2 animate-drift-slower"></div>
+    <div class="ambient-blob a3 animate-breathe"></div>
+    <div class="ambient-vignette"></div>
+  </div>
+  <div class="floating-shapes" id="contactShapes">
+    <div class="fshape ring1 animate-float" data-depth="26"></div>
+    <div class="fshape ring2 animate-float-slow" data-depth="-18"></div>
+    <div class="fshape dot1 animate-float" data-depth="34"></div>
+    <div class="fshape dot2 animate-float-slow" data-depth="-24"></div>
+    <div class="fshape orbit1 animate-spin-slower"></div>
+    <div class="fshape orbit2 animate-spin-slow"></div>
+  </div>
+
+  <div class="contact-inner">
+    <div class="reveal">
+      <p class="eyebrow" style="justify-content:center;">Get In Touch</p>
+      <h2>Have a website <span class="gold-text">to build?</span></h2>
+      <p class="contact-copy">
+        Business site, custom plugin, dashboard or form — tell me what you're building.
+        I reply to every serious enquiry within 24 hours.
+      </p>
+    </div>
+
+    <div class="contact-ctas reveal" style="transition-delay:0.15s;">
+      <a href="mailto:mr.nidhikl@gmail.com" class="gold-btn solid">
+        <span class="bg-fill"></span>
+        <span class="btn-label">Start A Project</span>
+      </a>
+      <a href="portfolio.html" class="gold-btn outline">
+        <span class="bg-fill"></span>
+        <span class="btn-label">See Modeling Work</span>
+      </a>
+    </div>
+
+    <div class="contact-details reveal" style="transition-delay:0.25s;">
+      <a href="mailto:mr.nidhikl@gmail.com" class="contact-detail">
+        <i data-lucide="mail" style="width:20px;height:20px;"></i>
+        <span>mr.nidhikl@gmail.com</span>
+      </a>
+      <a href="tel:+919741767854" class="contact-detail">
+        <i data-lucide="phone" style="width:20px;height:20px;"></i>
+        <span>+91 97417 67854</span>
+      </a>
+      <a href="#contact" class="contact-detail">
+        <i data-lucide="map-pin" style="width:20px;height:20px;"></i>
+        <span>Bangalore, India</span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-mark">SN</span>
+      <p>© <span id="year"></span> Shri Nidhi — Model, Creator &amp; Developer, Bangalore.</p>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/mr.nidhii?igsh=MXZwamthcm5mYXVsaQ==" target="_blank" rel="noreferrer" aria-label="Instagram" class="social-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/@mr_nidhii" target="_blank" rel="noreferrer" aria-label="YouTube" class="social-btn">
+       <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+       </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/srinidhi-kl-35209627b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="social-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+         <rect x="2" y="9" width="4" height="12"></rect>
+         <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/share/1KEbi2yBTZ/" target="_blank" rel="noreferrer" aria-label="Facebook" class="social-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

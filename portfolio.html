@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio — Shri Nidhi | Modeling, Reels &amp; Brand Collabs</title>
+<meta name="description" content="Browse Shri Nidhi's modeling portfolio: fashion, casual, traditional and lifestyle shoots, plus short-form reels and brand collaborations." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Bebas+Neue&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar" id="navbar">
+  <nav>
+    <a href="index.html" class="brand">
+      <span class="brand-mark">SN</span>
+      <span class="brand-name">Shri Nidhi</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="portfolio.html" class="nav-link is-active">Portfolio</a>
+      <a href="development.html" class="nav-link">Dev Work</a>
+      <a href="collab.html" class="nav-link">Collab</a>
+      <a href="#reels" class="nav-link">Reels</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <div class="nav-cta">
+      <a href="contact.html" class="gold-btn solid" style="padding:0.65rem 1.5rem; font-size:0.875rem;">
+        <span class="bg-fill"></span>
+        <span class="btn-label">Hire Me</span>
+      </a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <i data-lucide="menu" id="navToggleIcon"></i>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="portfolio.html" class="mobile-link">Portfolio</a>
+      <a href="development.html" class="mobile-link">Dev Work</a>
+      <a href="collab.html" class="mobile-link">Collab</a>
+      <a href="#reels" class="mobile-link">Reels</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main style="padding-top:6rem;">
+<!-- ===================== GALLERY ===================== -->
+<section id="portfolio" class="gallery">
+  <div class="gallery-blob animate-drift-slow"></div>
+
+  <div class="gallery-inner">
+    <div class="reveal text-center">
+      <p class="eyebrow"><span class="rule"></span>Gallery<span class="rule"></span></p>
+      <h2 class="section-title">My Modeling <span class="gold-text">Portfolio</span></h2>
+    </div>
+
+    <div class="filter-bar reveal" style="transition-delay:0.1s;" id="filterBar">
+      <button class="filter-btn active" data-filter="All"><span class="pill"></span><span class="label">All</span></button>
+      <button class="filter-btn" data-filter="Fashion"><span class="pill"></span><span class="label">Fashion</span></button>
+      <button class="filter-btn" data-filter="Casual"><span class="pill"></span><span class="label">Casual</span></button>
+      <button class="filter-btn" data-filter="Traditional"><span class="pill"></span><span class="label">Traditional</span></button>
+      <button class="filter-btn" data-filter="Lifestyle"><span class="pill"></span><span class="label">Lifestyle</span></button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+
+  <div class="lightbox-overlay" id="lightbox">
+    <div class="lightbox-box" id="lightboxBox">
+      <img id="lightboxImg" src="" alt="" />
+      <div class="lightbox-caption">
+        <div>
+          <p class="shot-cat" id="lightboxCat"></p>
+          <p class="shot-label" id="lightboxLabel"></p>
+        </div>
+      </div>
+    </div>
+    <button class="lightbox-close" aria-label="Close" id="lightboxClose"><i data-lucide="x"></i></button>
+    <button class="lightbox-nav prev" aria-label="Previous image" id="lightboxPrev"><i data-lucide="chevron-left"></i></button>
+    <button class="lightbox-nav next" aria-label="Next image" id="lightboxNext"><i data-lucide="chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- ===================== REELS ===================== -->
+<section id="reels" class="reels">
+  <div class="reels-bg"></div>
+  <div class="reels-blob animate-drift-slow"></div>
+
+  <div class="reels-inner">
+    <div class="reveal text-center">
+      <p class="eyebrow"><span class="rule"></span>Reels<span class="rule"></span></p>
+      <h2 class="section-title">Content In <span class="gold-text">Motion</span></h2>
+    </div>
+
+    <div class="reels-grid">
+      <a href="https://www.instagram.com/reel/DbBGe0yBU-O/?igsh=NDl6MGQ5OHA3OWg=" target="_blank" rel="noreferrer" class="reel-card reveal" style="transition-delay:0s;">
+        <img src="./assets/Reel1.jpeg" alt="Behind The Lens reel thumbnail" loading="lazy" />
+        <div class="reel-shade"></div>
+          <span class="reel-play"><i data-lucide="play" style="margin-left:2px;"></i><span class="reel-play-ring"></span></span>
+          <div class="reel-info">
+            <p class="title">Guruvaara Sanje Naa</p>
+            <p class="meta">5k views</p>
+          </div>
+      </a>
+      <a href="https://www.instagram.com/reel/DaQMAYKhlDA/?igsh=MXhtNDZ4czBrMWJpYw==" target="_blank" rel="noreferrer" class="reel-card reveal" style="transition-delay:0s;">
+        <img src="./assets/Reel2.jpeg" alt="Behind The Lens reel thumbnail" loading="lazy" />
+        <div class="reel-shade"></div>
+          <span class="reel-play"><i data-lucide="play" style="margin-left:2px;"></i><span class="reel-play-ring"></span></span>
+          <div class="reel-info">
+            <p class="title">Full Ingalishu</p>
+            <p class="meta">3.1M views</p>
+          </div>
+      </a>
+      <a href="https://www.instagram.com/reel/Dakx6dmMY9r/?igsh=MWdwbGNwbjZocmU3bg==" target="_blank" rel="noreferrer" class="reel-card reveal" style="transition-delay:0s;">
+        <img src="./assets/Reel3.jpeg" alt="Behind The Lens reel thumbnail" loading="lazy" />
+        <div class="reel-shade"></div>
+          <span class="reel-play"><i data-lucide="play" style="margin-left:2px;"></i><span class="reel-play-ring"></span></span>
+          <div class="reel-info">
+            <p class="title">Nidde Madakke Bidthilla</p>
+            <p class="meta">1.1M views</p>
+          </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COLLAB ===================== -->
+<section id="collab" class="collab">
+  <div class="collab-blob animate-drift-slower"></div>
+  <div class="collab-ring animate-float"></div>
+
+  <div class="collab-inner">
+    <div class="reveal">
+      <p class="eyebrow">Collaborate <span class="rule"></span></p>
+      <h2 class="section-title">Let's Create <span class="gold-text">Together</span></h2>
+    </div>
+
+    <div class="offer-grid">
+      <div class="offer-card shimmer-border reveal" style="transition-delay:0s;">
+        <span class="offer-icon"><i data-lucide="megaphone"></i></span>
+        <h3>Brand Campaigns</h3>
+        <p>Print, digital and OOH campaigns — from concept boards to final delivery.</p>
+      </div>
+      <div class="offer-card shimmer-border reveal" style="transition-delay:0.1s;">
+        <span class="offer-icon"><i data-lucide="video"></i></span>
+        <h3>Ad Films &amp; Reels</h3>
+        <p>On-camera talent plus scripting and edit direction for short-form content.</p>
+      </div>
+      <div class="offer-card shimmer-border reveal" style="transition-delay:0.2s;">
+        <span class="offer-icon"><i data-lucide="monitor-smartphone"></i></span>
+        <h3>Web Experiences</h3>
+        <p>Animated, high-performance brand sites and landing pages built end to end.</p>
+      </div>
+      <div class="offer-card shimmer-border reveal" style="transition-delay:0.3s;">
+        <span class="offer-icon"><i data-lucide="handshake"></i></span>
+        <h3>Long-Term Partnerships</h3>
+        <p>Ambassador roles and retained creative work with consistent brand voice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="contact">
+  <div class="ambient-backdrop bold">
+    <div class="ambient-blob a1 animate-drift-slow"></div>
+    <div class="ambient-blob a2 animate-drift-slower"></div>
+    <div class="ambient-blob a3 animate-breathe"></div>
+    <div class="ambient-vignette"></div>
+  </div>
+  <div class="floating-shapes" id="contactShapes">
+    <div class="fshape ring1 animate-float" data-depth="26"></div>
+    <div class="fshape ring2 animate-float-slow" data-depth="-18"></div>
+    <div class="fshape dot1 animate-float" data-depth="34"></div>
+    <div class="fshape dot2 animate-float-slow" data-depth="-24"></div>
+    <div class="fshape orbit1 animate-spin-slower"></div>
+    <div class="fshape orbit2 animate-spin-slow"></div>
+  </div>
+
+  <div class="contact-inner">
+    <div class="reveal">
+      <p class="eyebrow" style="justify-content:center;">Get In Touch</p>
+      <h2>Ready to shoot, create <span class="gold-text">or build?</span></h2>
+      <p class="contact-copy">
+        Tell me about the campaign, the concept or the product. I reply to every serious
+        enquiry within 24 hours.
+      </p>
+    </div>
+
+    <div class="contact-ctas reveal" style="transition-delay:0.15s;">
+      <a href="mailto:mr.nidhikl@gmail.com" class="gold-btn solid">
+        <span class="bg-fill"></span>
+        <span class="btn-label">Start A Project</span>
+      </a>
+      <a href="#portfolio" class="gold-btn outline">
+        <span class="bg-fill"></span>
+        <span class="btn-label">See Portfolio</span>
+      </a>
+    </div>
+
+    <div class="contact-details reveal" style="transition-delay:0.25s;">
+      <a href="mailto:mr.nidhikl@gmail.com" class="contact-detail">
+        <i data-lucide="mail" style="width:20px;height:20px;"></i>
+        <span>mr.nidhikl@gmail.com</span>
+      </a>
+      <a href="tel:+919741767854" class="contact-detail">
+        <i data-lucide="phone" style="width:20px;height:20px;"></i>
+        <span>+91 97417 67854</span>
+      </a>
+      <a href="#contact" class="contact-detail">
+        <i data-lucide="map-pin" style="width:20px;height:20px;"></i>
+        <span>Bangalore, India</span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-mark">SN</span>
+      <p>© <span id="year"></span> Shri Nidhi — Model, Creator &amp; Developer, Bangalore.</p>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/mr.nidhii?igsh=MXZwamthcm5mYXVsaQ==" target="_blank" rel="noreferrer" aria-label="Instagram" class="social-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/@mr_nidhii" target="_blank" rel="noreferrer" aria-label="YouTube" class="social-btn">
+       <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+       </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/srinidhi-kl-35209627b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="social-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+         <rect x="2" y="9" width="4" height="12"></rect>
+         <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/share/1KEbi2yBTZ/" target="_blank" rel="noreferrer" aria-label="Facebook" class="social-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

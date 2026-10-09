@@ -1,0 +1,164 @@
+/* ============================================================
+   DESIGN TOKENS — colors, gradients, shadows, radius
+   ============================================================ */
+:root {
+  --radius: 1rem;
+
+  --background: oklch(0.16 0.006 60);
+  --foreground: oklch(0.96 0.008 85);
+  --card: oklch(0.2 0.008 62);
+
+  --primary: oklch(0.76 0.14 82);
+  --primary-foreground: oklch(0.17 0.01 60);
+  --primary-glow: oklch(0.88 0.13 92);
+  --primary-deep: oklch(0.56 0.13 65);
+
+  --muted-foreground: oklch(0.72 0.014 80);
+  --border: oklch(0.76 0.14 82 / 18%);
+
+  --gradient-gold: linear-gradient(
+    100deg,
+    var(--primary-deep),
+    var(--primary),
+    var(--primary-glow),
+    var(--primary)
+  );
+  --gradient-night: linear-gradient(
+    160deg,
+    oklch(0.13 0.005 60),
+    oklch(0.19 0.02 70),
+    oklch(0.14 0.006 60)
+  );
+
+  --shadow-gold-soft: 0 0 0 1px oklch(0.76 0.14 82 / 25%), 0 24px 60px -24px oklch(0.76 0.14 82 / 35%);
+  --shadow-gold-strong: 0 0 0 1px oklch(0.76 0.14 82 / 55%), 0 30px 80px -20px oklch(0.76 0.14 82 / 55%);
+
+  --font-display: "Bebas Neue", ui-sans-serif, sans-serif;
+  --font-sans: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-script: "Great Vibes", cursive;
+}
+
+/* ============================================================
+   RESET + BASE
+   ============================================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; border-color: var(--border); }
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.container { max-width: 80rem; margin: 0 auto; padding: 0 1.25rem; }
+@media (min-width: 640px) { .container { padding: 0 2rem; } }
+
+::selection { background: var(--primary); color: var(--primary-foreground); }
+
+.gold-text {
+  background: var(--gradient-gold);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shimmer-border { position: relative; isolation: isolate; }
+.shimmer-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    110deg,
+    color-mix(in oklab, var(--primary) 10%, transparent),
+    var(--primary),
+    color-mix(in oklab, var(--primary) 8%, transparent),
+    var(--primary-glow),
+    color-mix(in oklab, var(--primary) 10%, transparent)
+  );
+  background-size: 300% 100%;
+  animation: shimmer 7s linear infinite;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ============================================================
+   KEYFRAMES
+   ============================================================ */
+@keyframes drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  33% { transform: translate3d(6%, -5%, 0) scale(1.12); }
+  66% { transform: translate3d(-5%, 4%, 0) scale(0.94); }
+}
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.035); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-26px) rotate(8deg); }
+}
+@keyframes pulse-ring {
+  0% { transform: scale(0.85); opacity: 0.7; }
+  100% { transform: scale(1.7); opacity: 0; }
+}
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes bounce-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(36px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes spin-cw { to { transform: translate(-50%, -50%) rotate(360deg); } }
+
+.animate-drift-slow { animation: drift 26s ease-in-out infinite; }
+.animate-drift-slower { animation: drift 38s ease-in-out infinite reverse; }
+.animate-breathe { animation: breathe 9s ease-in-out infinite; }
+.animate-float { animation: float 12s ease-in-out infinite; }
+.animate-float-slow { animation: float 18s ease-in-out infinite; }
+.animate-spin-slow { animation: spin-cw 34s linear infinite; }
+.animate-spin-slower { animation: spin-cw 60s linear infinite; }
+.animate-pulse-ring { animation: pulse-ring 2.6s ease-out infinite; }
+.animate-shimmer { animation: shimmer 6s linear infinite; }
+.animate-bounce-soft { animation: bounce-soft 2s ease-in-out infinite; }
+
+/* ============================================================
+   SCROLL REVEAL (IntersectionObserver driven)
+   ============================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
